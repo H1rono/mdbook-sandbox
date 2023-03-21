@@ -1,0 +1,6 @@
+[book]
+authors = ["H1rono"]
+language = "en"
+multilingual = false
+src = "src"
+title = "H1rono sandbox"
