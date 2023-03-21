@@ -11,6 +11,9 @@ on:
 env:
   MDBOOK_VERSION: v0.4.28
 
+permissions:
+  contents: write
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
