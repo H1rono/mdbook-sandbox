@@ -4,9 +4,11 @@ name: GH Pages Deploy
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 env:
   MDBOOK_VERSION: v0.4.28
@@ -15,8 +17,23 @@ permissions:
   contents: write
 
 jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            src:
+              - 'src/**'
+              - book.toml
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
   build-deploy:
     runs-on: ubuntu-latest
+    needs: check-changes
+    if: ${{ needs.check-changes.outputs.src == 'true' }}
 
     steps:
       - name: Checkout
