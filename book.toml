@@ -4,3 +4,4 @@ language = "ja"
 multilingual = false
 src = "src"
 title = "H1rono sandbox"
+description = "mdBookのテスト用のリポジトリです。"
