@@ -5,3 +5,7 @@ multilingual = false
 src = "src"
 title = "H1rono sandbox"
 description = "mdBookのテスト用のリポジトリです。"
+
+[output.html]
+git-repository-url = "https://github.com/H1rono/mdbook-sandbox"
+git-repository-icon = "fa-github"
