@@ -4,7 +4,7 @@
 
 ## 設定ファイル
 
-[Usage #新しいドキュメントを作成](./03-usage.md#新しいドキュメントを作成)でも少し触れましたが、mdBookの設定は`mdbook.toml`に記述します。以下はこのドキュメントの([`1640d5d`](https://github.com/H1rono/mdbook-sandbox/commit/1640d5d602b9ce07faa6e2b2c673f8b9a1f5ecf1)時点の)book.tomlです。
+[Usage #新しいドキュメントを作成](./03-usage.md#新しいドキュメントを作成)でも少し触れましたが、mdBookの設定は`book.toml`に記述します。以下はこのドキュメントの([`1640d5d`](https://github.com/H1rono/mdbook-sandbox/commit/1640d5d602b9ce07faa6e2b2c673f8b9a1f5ecf1)時点の)book.tomlです。
 
 ```toml
 [book]
